@@ -1,0 +1,20 @@
+{
+  "name": "notification-server",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "node -r dotenv/config ./server.js",
+    "dev": "nodemon -r dotenv/config ./server.js",
+    "build": "cd views && npm install --only=dev && npm install && npm run build"
+  },
+  "dependencies": {
+    "@sendgrid/mail": "^6.5.1",
+    "agenda": "^2.3.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "kavenegar": "^1.1.4",
+    "mongoose": "^5.8.10",
+    "nodemon": "^2.0.2",
+    "shortid": "^2.2.15"
+  }
+}
